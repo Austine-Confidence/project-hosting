@@ -252,7 +252,7 @@ header {
   border-radius: 6px;
 }
 
-
+            /* car varieties section styles */
 .varieties {
   padding: 4rem 1.6rem;
   background: #f9f9f9;
@@ -287,6 +287,7 @@ header {
 }
 
 .card {
+  /* height: 25rem; */
   background: #fff;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
@@ -317,10 +318,6 @@ header {
   font-weight: 600;
   color: #ff6b35;
 }
-
-/* #visible {
-  display: none;
-} */
 
 .card div {
   display: flex;
@@ -377,6 +374,53 @@ header {
   border: 2px solid #fff;
 } */
 
+            /* verification sheet section styles */
+.verfication-sheet {
+  padding: 4rem 2rem;
+  background: #0c0c0c;
+  color: #fff;
+  text-align: center;
+}
+
+.verfication-sheet .auction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* max-width: 1100px; */
+  gap: 2rem;
+  margin: 0 auto;
+}
+
+.verfication-sheet .auction-text {
+  flex: 1;
+  text-align: left;
+}
+
+.verfication-sheet .auction-text h2 {
+  font-size: 2rem;
+  max-width: 1300px;
+  margin-bottom: 1rem;
+  color: #ff6b35;
+}
+
+.verfication-sheet .auction-text p {
+  font-size: 1.1rem;
+  color: #ccc;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.verfication-sheet .auction img {
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+            /* statisfied users section styles */
+
+
+
 /* Responsive Styles */
   
   @media (max-width: 900px) {
@@ -407,6 +451,16 @@ header {
     .hero-section a {
       text-decoration: none;
       color: #fff;
+    }
+
+    .verfication-sheet .auction {
+      display: block;
+      flex-direction: column;
+    }
+
+    .verfication-sheet .auction img {
+      width: 100%;
+      margin-top: 1.5rem;
     }
   }
 

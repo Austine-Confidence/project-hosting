@@ -154,7 +154,8 @@
                 <p>Pure performance and engineering excellence in every model.</p>
                 <div class="price">$95,000 - $300,000</div>
                 <div>
-                    <img src="./assest/icon/shopping-cart.png" alt=""><button><a class="btn" href="#">add to Cart</a></button>
+                    <img src="./assest/icon/shopping-cart.png" alt=""><button><a class="btn" href="#">add to
+                            Cart</a></button>
                 </div>
             </div>
 
@@ -219,46 +220,163 @@
         </div>
     </section>
 
-    
 
-<script>
-    (function () {
-        const menuBtn = document.querySelector('.menu-toggle');
-        const mobileNav = document.querySelector('.mobile-nav');
-        const closeBtn = document.querySelector('.mobile-nav .close-btn');
+    <section class="verfication-sheet">
+        <div class="auction">
+            <div class="auction-text">
+                <h2>Japanese Auction Sheet Verfication</h2>
+                <p>Ensure transparency and confidence in your vehicle purchase with our expert Japanese Auction Sheet
+                    Verification services.</p>
+            </div>
 
-        function openMenu() {
-            menuBtn.classList.add('open');
-            menuBtn.setAttribute('aria-expanded', 'true');
-            mobileNav.classList.add('open');
-            mobileNav.setAttribute('aria-hidden', 'false');
-            // trap focus optionally could be added
-        }
+            <img src="./assest/images/verfication sheet.jpg" alt="Japanese Auction Sheet Verfication">
+        </div>
+    </section>
 
-        function closeMenu() {
-            menuBtn.classList.remove('open');
-            menuBtn.setAttribute('aria-expanded', 'false');
-            mobileNav.classList.remove('open');
-            mobileNav.setAttribute('aria-hidden', 'true');
-        }
 
-        menuBtn && menuBtn.addEventListener('click', function () {
-            const expanded = this.getAttribute('aria-expanded') === 'true';
-            if (expanded) closeMenu(); else openMenu();
-        });
+    <section class="statisfied-users">
+        <div class="testimonies">
+            
+            <div class="statisfied-content">
+                <i class="fa-solid fa-quote-left"></i>
+                <img src="./assest/images/users/user1.jpg" alt="Satisfied Users">
+                <p>"Daniel AutoHub made my car buying experience seamless and enjoyable. Their selection of vehicles is
+                    top-notch, and the staff was incredibly helpful throughout the process. I found my dream car at a
+                    great
+                    price!"</p>
+                <h3>John Smith</h3>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
 
-        closeBtn && closeBtn.addEventListener('click', closeMenu);
+            <div class="statisfied-content">
+                <i class="fa-solid fa-quote-left"></i>
+                <img src="./assest/images/users/female1.jpg" alt="Satisfied Users">
+                <p>"I was impressed by the professionalism and knowledge of the team at Daniel AutoHub. They helped me
+                    find
+                    a reliable car that fits my budget perfectly. The entire process was transparent, and I felt
+                    confident in
+                    my purchase."</p>
+                <h3>Sarah Johnson</h3>
+            </div>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+        </div>
 
-        // close on escape
-        document.addEventListener('keydown', function (e) {
-            if (e.key === 'Escape') closeMenu();
-        });
+        <div class="statisfied-content">
+            <i class="fa-solid fa-quote-left"></i>
+            <img src="./assest/images/users/user2.jpg" alt="Satisfied Users">
+            <p>"Daniel AutoHub exceeded my expectations! The vehicle I purchased was in excellent condition, and the
+                auction sheet verification gave me peace of mind about its history. The staff was friendly and
+                accommodating, making the entire experience enjoyable."</p>
+            <h3>Michael Brown</h3>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+        </div>
 
-        // close when clicking a link inside the mobile nav
-        mobileNav && mobileNav.addEventListener('click', function (e) {
-            if (e.target.matches('a')) closeMenu();
-        });
-    })();
-</script>
+        <div class="statisfied-content">
+            <i class="fa-solid fa-quote-left"></i>
+            <img src="./assest/images/users/female2.jpg" alt="Satisfied Users">
+            <p>"From start to finish, Daniel AutoHub provided exceptional service. Their team was knowledgeable about
+                the vehicles and helped me navigate the auction process with ease. I highly recommend them to anyone
+                looking for a quality car."</p>
+            <h3>Emily Davis</h3>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+        </div>
+
+        <div class="statisfied-content">
+            <i class="fa-solid fa-quote-left"></i>
+            <img src="./assest/images/users/user3.jpg" alt="Satisfied Users">
+            <p>"I can't thank Daniel AutoHub enough for their outstanding service. The auction sheet verification was
+                thorough, and I felt completely informed about my purchase. The team went above and beyond to ensure I
+                was satisfied with my new car."</p>
+            <h3>David Wilson</h3>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+        </div>
+
+        <div class="statisfied-content">
+            <i class="fa-solid fa-quote-left"></i>
+            <img src="./assest/images/users/female user 3.jpg" alt="Satisfied Users">
+            <p>"Daniel AutoHub provided an exceptional car buying experience. The auction sheet verification was
+                detailed and transparent, giving me confidence in my purchase. The staff was friendly and knowledgeable,
+                making the entire process smooth and enjoyable."</p>
+            <h3>Olivia Martinez</h3>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+        </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        (function () {
+            const menuBtn = document.querySelector('.menu-toggle');
+            const mobileNav = document.querySelector('.mobile-nav');
+            const closeBtn = document.querySelector('.mobile-nav .close-btn');
+
+            function openMenu() {
+                menuBtn.classList.add('open');
+                menuBtn.setAttribute('aria-expanded', 'true');
+                mobileNav.classList.add('open');
+                mobileNav.setAttribute('aria-hidden', 'false');
+                // trap focus optionally could be added
+            }
+
+            function closeMenu() {
+                menuBtn.classList.remove('open');
+                menuBtn.setAttribute('aria-expanded', 'false');
+                mobileNav.classList.remove('open');
+                mobileNav.setAttribute('aria-hidden', 'true');
+            }
+
+            menuBtn && menuBtn.addEventListener('click', function () {
+                const expanded = this.getAttribute('aria-expanded') === 'true';
+                if (expanded) closeMenu(); else openMenu();
+            });
+
+            closeBtn && closeBtn.addEventListener('click', closeMenu);
+
+            // close on escape
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape') closeMenu();
+            });
+
+            // close when clicking a link inside the mobile nav
+            mobileNav && mobileNav.addEventListener('click', function (e) {
+                if (e.target.matches('a')) closeMenu();
+            });
+        })();
+    </script>
 
 </html>
