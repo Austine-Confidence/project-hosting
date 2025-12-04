@@ -190,8 +190,8 @@ header {
   max-width: 90%;
   height: 100%;
   background: linear-gradient(180deg, #0f0f0f 0%, #171717 100%);
-  box-shadow: -8px 0 30px rgba(0,0,0,0.5);
-  transition: right 0.35s cubic-bezier(.2,.9,.2,1);
+  box-shadow: -8px 0 30px rgba(0, 0, 0, 0.5);
+  transition: right 0.35s cubic-bezier(0.2, 0.9, 0.2, 1);
   z-index: 2000;
   color: #fff;
   padding: 2.2rem 1.6rem;
@@ -252,7 +252,7 @@ header {
   border-radius: 6px;
 }
 
-            /* car varieties section styles */
+/* car varieties section styles */
 .varieties {
   padding: 4rem 1.6rem;
   background: #f9f9f9;
@@ -264,7 +264,8 @@ header {
   margin: 0 auto;
 }
 
-.varieties .container  h2 {
+.varieties .container h2 {
+  color: #e55a2b;
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 1rem;
@@ -374,7 +375,7 @@ header {
   border: 2px solid #fff;
 } */
 
-            /* verification sheet section styles */
+/* verification sheet section styles */
 .verfication-sheet {
   padding: 4rem 2rem;
   background: #0c0c0c;
@@ -417,71 +418,228 @@ header {
   border-radius: 10px;
 }
 
+.testimonies {
+  padding: 4rem 2rem;
+  background: #f9f9f9;
+  color: #111;
+  text-align: center;
+}
+
+.testimonies h2 {
+  color: #e55a2b;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.testimonies .subtitle {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.testimony-cards {
+  display: grid;
+  margin: 3rem 3.5rem 2rem 3.5rem;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  gap: 2rem;
+}
+
+.testimony-cards img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.testimony-cards h3 {
+  color: #e55a2b;
+  font-size: 1.5rem;
+}
+
+.testimony-cards p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.testimony-cards i {
+  color: #e55a2b;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+
+.enhance {
+  margin: 0 3rem;
+  border-radius: 20px;
+  padding: 4rem 2rem;
+  background-image: url(https://i.pinimg.com/1200x/20/3a/1a/203a1a884351ec3c355d284c3cd8f95d.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5); */
+}
+
+.enhance-content {
+  text-align: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.enhance-content h2 {
+  color: #e55a2b;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.enhance-content P {
+  
+  color: #fff;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.enhance-content button {
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 5px;
+  border: 2px solid #e55a2b;
+  background-color: transparent;
+}
+
+.enhance-content button a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.enhance-content button:hover {
+  background-color: #e55a2b;
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
 
 
 
 
 
 /* Responsive Styles */
-  
-  @media (max-width: 900px) {
-    .hero-section {
-      height: 80vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-  
-    .hero-section h1 {
-      font-size: 2.5rem;
-    }
-  
-    .hero-section p {
-      font-size: 1rem;
-      padding: 0 1rem;
-    }
-  
-    .hero-section button {
-      margin: 0 0.4rem;
-      padding: 0.4rem 1rem;
-      font-size: 1.1rem;
-      border: none;
-      border-radius: 5px;
-    }
-  
-    .hero-section a {
-      text-decoration: none;
-      color: #fff;
-    }
 
-    .verfication-sheet .auction {
-      display: block;
-      flex-direction: column;
-    }
-
-    .verfication-sheet .auction img {
-      width: 100%;
-      margin-top: 1.5rem;
-    }
+@media (max-width: 900px) {
+  .hero-section {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
-    /* Responsive adjustments: hide desktop nav and show hamburger */
-    @media (max-width: 900px) {
-      .nav-links,
-      .nav-btn {
-        display: none;
-      }
-      .menu-toggle {
-        display: inline-block;
-      }
-      .logo h3 {
-        font-size: 1.4rem;
-      }
-    }
-    
-    /* Small screens: slightly tweak hero spacing when nav is open */
-    @media (max-width: 480px) {
-      .menu-toggle span {
-        width: 22px;
-      }
-    }
+  .hero-section h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-section p {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  .hero-section button {
+    margin: 0 0.4rem;
+    padding: 0.4rem 1rem;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+  }
+
+  .hero-section a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+
+
+
+
+  .varieties .container h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .varieties .container subtitle {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  } 
+
+  .grid {
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+  }
+
+
+
+
+  .verfication-sheet .auction {
+    display: block;
+    flex-direction: column;
+  }
+
+  .verfication-sheet .auction img {
+    width: 100%;
+    margin-top: 1.5rem;
+  }
+
+  .testimony-cards {
+    flex-direction: column;
+    display: block;
+    margin: 0 auto;
+    gap: 2rem;
+  }
+
+
+  .enhance {
+    margin: 0 0;
+    padding: 2rem 1rem;
+    border-radius: 0px;
+  }
+
+  .enhance-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .enhance-content p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+/* Responsive adjustments: hide desktop nav and show hamburger */
+@media (max-width: 900px) {
+  .nav-links,
+  .nav-btn {
+    display: none;
+  }
+  .menu-toggle {
+    display: inline-block;
+  }
+  .logo h3 {
+    font-size: 1.4rem;
+  }
+}
+
+/* Small screens: slightly tweak hero spacing when nav is open */
+@media (max-width: 480px) {
+  .menu-toggle span {
+    width: 22px;
+  }
+}
