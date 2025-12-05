@@ -25,6 +25,11 @@ header {
   align-items: center;
   justify-content: space-between;
   background-color: #1a1a1a;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }
 
 .logo h3 {
@@ -97,17 +102,17 @@ header {
   height: 70vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
   text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
 }
 
 .hero-section h1 {
   /* max-width: 600px; */
   font-size: 3.5rem;
   font-weight: 800;
-  margin-bottom: 1rem;
+  margin: 12rem 0 0 1rem;
   line-height: 1.2;
 }
 
@@ -347,18 +352,19 @@ header {
 }
 
 .varieties-btn {
+  text-align: center;
+  margin-top: 2rem;
+  gap: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
-  margin-top: 1rem;
-  transition: 1s #ff6b35 ease;
 }
 
 .varieties-btn button {
   padding: 0.8rem 2rem;
-  border: 2px solid #ff6b35;
+  border: none;
   border-radius: 5px;
+  border: 2px solid #ff6b35;
   background-color: transparent;
 }
 
@@ -389,7 +395,7 @@ header {
   align-items: center;
   /* max-width: 1100px; */
   gap: 2rem;
-  margin: 0 auto;
+  margin: 3rem 3.5rem 2rem 3.5rem;
 }
 
 .verfication-sheet .auction-text {
@@ -447,8 +453,8 @@ header {
 }
 
 .testimony-cards img {
-  width: 80%;
-  height: 50vh;
+  width: 100%;
+  height: 60vh;
   object-fit: fill;
   border-radius: 20px;
 }
@@ -473,10 +479,11 @@ header {
 
 
 .enhance {
-  margin: 0 3rem;
+  margin: 3rem 3.5rem 2rem 3.5rem;
   border-radius: 20px;
   padding: 4rem 2rem;
   background-image: url(https://i.pinimg.com/1200x/20/3a/1a/203a1a884351ec3c355d284c3cd8f95d.jpg);
+  overlay: 1rem;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -485,8 +492,8 @@ header {
 
 .enhance-content {
   text-align: center;
-  max-width: 1100px;
-  margin: 0 auto;
+  /* max-width: 1100px; */
+  margin: 3rem 3.5rem 2rem 3.5rem;
 }
 
 .enhance-content h2 {
@@ -526,7 +533,7 @@ header {
 .footer {
   padding: 4rem 1.6rem;
   margin: 5rem 0 0 0;
-  height: 50vh;
+  height: 70vh;
   background-color: #1a1a1a;
   color: #fff;
 }
@@ -535,6 +542,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: left;
+  margin: 3rem 3.5rem 2rem 3.5rem;
   /* max-width: 900px; */
 }
 
@@ -551,17 +559,22 @@ header {
 }
 
 .footer .content p {
-  max-width: 500px;
+  max-width: 330px;
   font-size: 1rem;
   color: #ccc;
 }
 
-.footer .content i {
+.footer .content .logo i {
   color: #e55a2b;
   font-size: 1rem;
   gap: 20rem;
   margin-top: 1rem;
 }
+
+.footer .content .icon i {
+  color: #fff;
+}
+
 
 .footer .content ul {
   list-style: none;
@@ -570,6 +583,9 @@ header {
   gap: 0.8rem;
 }
 
+.footer .content ul li {
+  margin-bottom: 0.5rem;
+}
 .footer .content ul li a {
   text-decoration: none;
   color: #ccc;
@@ -641,6 +657,8 @@ header {
   .verfication-sheet .auction {
     display: block;
     flex-direction: column;
+    margin: 0 auto;
+    gap: 1.5rem;
   }
 
   .verfication-sheet .auction img {
@@ -675,19 +693,22 @@ header {
 
 
   .enhance {
-    margin: 0 0;
-    padding: 2rem 1rem;
-    border-radius: 0px;
+    margin: 0 auto;
+    /* max-width: 1100px; */
+    padding: 4rem 0;
+    border-radius: 0;
   }
 
   .enhance-content h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin-bottom: 1rem;
+    text-align: center;
   }
 
   .enhance-content p {
     font-size: 1rem;
     margin-bottom: 1rem;
+    text-align: center;
   }
 
   .footer {
@@ -698,9 +719,10 @@ header {
 
   .footer .content {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
-    gap: 3rem;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+    margin: 0 auto;
+    padding: 0 1rem;
   }
 
 
